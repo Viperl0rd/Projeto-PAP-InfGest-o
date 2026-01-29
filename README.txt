@@ -1,31 +1,32 @@
-Stellar by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Projeto PAP – Gestão Financeira para Jovens
 
+Este é um projeto pessoal desenvolvido como trabalho final do curso Técnico de Informática para Gestão, com o objetivo de demonstrar competências em HTML, CSS, JavaScript e criação de interfaces interativas para web.
 
-Say hello to Stellar, a slick little one-pager with a super vibrant color palette (which
-I guess you can always tone down if it's a little too vibrant for you), a "sticky" in-page
-nav bar (powered by my Scrollex plugin), a separate generic page template (just in case
-you need one), and an assortment of pre-styled elements.
+O projeto é um site informativo e interativo voltado para jovens, com foco em educação financeira, apresentando ferramentas que ajudam a entender e simular investimentos, poupanças e criptomoedas.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+🚀 Funcionalidades Principais
+🔹 Comparador de Fundos de Investimento
 
-(* = not included)
+Permite avaliar diferentes fundos com base em rendimento e taxa de administração
 
-AJ
-aj@lkn.io | @ajlkn
+Facilita decisões financeiras simples e rápidas
 
+🔹 Calculadoras de Investimento e Poupança
 
-Credits:
+Calculadora de ações: calcula total investido e retorno com base no preço e quantidade de ações
 
-	Demo Images:
-		Unsplash (unsplash.com)
+Calculadora de poupança: permite simular juros simples e compostos ao longo do tempo
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Calculadora de retorno potencial: simula crescimento de investimento considerando taxa e tempo
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+🔹 Conversor de Criptomoedas
+
+Converte valores em euros para diferentes criptomoedas
+
+Atualiza resultados com base nos valores informados pelo utilizador
+
+🔹 Conteúdo Educativo
+
+Textos informativos sobre investimentos, poupança, criptomoedas e gestão financeira
+
+Voltado para jovens que querem aprender conceitos financeiros básicos de forma prática
