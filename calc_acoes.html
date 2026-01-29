@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>JovenFinança</title>
+		<link rel="icon" type="image/png" href="logo2.png" id="toplogo">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Calculadora de Ações</h1>
+						<p></p>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Homepage</a></li>
+						<li><a href="index.html#intro" class="active">Projeto</a></li>
+						<li><a href="index.html#first">Finanças Fundamentais</a></li>
+						<li><a href="index.html#second">Investimentos</a></li>
+						<li><a href="index.html#cta">Criador</a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+
+									<h2>O que são ações?</h2>
+									<p> Ações são partes de uma empresa que você pode comprar. Quando você compra uma ação, você está comprando uma pequena parte daquela empresa. Se a empresa cresce e tem lucro, o valor das suas ações pode aumentar. Se a empresa tem problemas, o valor das suas ações pode diminuir.</p>
+									<h2>Como investir em ações?</h2>
+									<p>1. Escolha uma Corretora: Para comprar e vender ações, você precisa usar uma corretora. Algumas opções populares incluem DEGIRO, Banco Best e Banco Invest.</p>
+									<p>2. Abra uma Conta: Registre-se na corretora escolhida. Você precisará fornecer informações pessoais e, muitas vezes, verificar sua identidade.</p>
+									<p>3. Deposite Dinheiro: Transfira dinheiro para a sua conta da corretora. Esse dinheiro será usado para comprar ações.</p>
+									<p>4. Compre Ações: Pesquise sobre empresas nas quais você está interessado e compre suas ações através da plataforma da corretora.</p>
+									<p>5. Monitore seu Investimento: Acompanhe o desempenho das suas ações e decida se quer vender, manter ou comprar mais.</p>
+									<h2>Onde investir em ações?</h2>
+									<p>Aplicativos de Investimento: Aplicativos móveis que permitem comprar e vender ações de forma fácil. Alguns bancos em Portugal também oferecem esses serviços através de seus aplicativos.</p>
+									<h2>Por que investir em ações?</h2>
+									<p>1. Potencial de Crescimento: Se a empresa em que você investiu crescer e tiver sucesso, o valor das suas ações pode aumentar, o que significa que você pode ganhar dinheiro.</p>
+									<p>2. Dividendos: Algumas empresas pagam parte de seus lucros aos acionistas na forma de dividendos. Isso significa que você pode receber pagamentos regulares além do valor crescente das suas ações.</p>
+									<p>3. Diversificação: Investir em ações de diferentes empresas pode ajudar a distribuir o risco. Se uma empresa tiver problemas, você ainda pode ter sucesso com outras.</p>
+									<p>4. Participação no Sucesso: Comprar ações de uma empresa que você gosta e acredita pode ser uma forma de participar do sucesso dela.</p>
+								
+									
+								<section id="calculadoras">
+
+									<div class="container">
+										<h1 id="calc_texts">Calculadora de Investimento em Ações</h1>
+										<form id="investment-form">
+											<label for="investment-amount">Valor do Investimento (€):</label>
+											<input type="number" id="investment-amount" required>
+								
+											<label for="stock-price">Preço Atual da Ação (€):</label>
+											<input type="number" id="stock-price" required>
+								
+											<label for="number-of-stocks">Número de Ações:</label>
+											<input type="number" id="number-of-stocks" required>
+								
+											<button type="button" onclick="calculateInvestment()">Calcular</button>
+										</form>
+										<div id="result">
+
+											<label for="total-invested">Total Investido (€):</label>
+											<input type="text" id="total-invested" readonly>
+								
+											<label for="potential-return">Retorno Potencial (€):</label>
+											<input type="text" id="potential-return" readonly>
+										</div>
+									</div>
+
+									<div class="container">
+										<h1 id="calc_texts">Calculadora de Investimento em Ações</h1>
+										<h2 id="calc_texts">Retorno potencial Real</h2>
+
+										<form id="investment-form">
+											<label for="investment-amount">Valor do Investimento (€):</label>
+											<input type="number" id="investment-amount1" required>
+								
+											<label for="stock-price">Preço Atual da Ação (€):</label>
+											<input type="number" id="stock-price1" required>
+								
+											<label for="number-of-stocks">Número de Ações:</label>
+											<input type="number" id="number-of-stocks1" required>
+								
+											<label for="growth-rate">Taxa de Crescimento Anual Esperada (%):</label>
+											<input type="number" id="growth-rate1" required>
+								
+											<label for="years">Anos:</label>
+											<input type="number" id="years1" required>
+								
+											<button type="button" onclick="calculateInvestmentreal()">Calcular</button>
+										</form>
+										<div id="result">
+											<label for="total-invested">Total Investido (€):</label>
+											<input type="text" id="total-invested1" readonly>
+								
+											<label for="potential-return">Retorno Potencial (€):</label>
+											<input type="text" id="potential-return1" readonly>
+										</div>
+									</div>
+								</section>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section >
+						<h2>Mais informações</h2>
+						<dl class="alt1">
+							<dt><a target="_blank" href="https://www.doutorfinancas.pt/creditos/quais-os-documentos-necessarios-para-o-credito-habitacao-tome-nota/?src=adw.aq-ch.search.cons.documentosch.cpa&gad_source=1&gclid=CjwKCAjwl4yyBhAgEiwADSEjeKXQSk2liPmXtLkRCD92PbtM0RTNtdU2pAE7eF7fSsUIVqiu7_I2vxoCRmEQAvD_BwE">Dr. Finanças</a></dt>
+						
+							<dt><a target="_blank" href="https://contaspoupanca.pt">Contas Poupança</a></dt>
+							
+							<dt><a target="_blank" href="https://moneylab.pt">Money Lab</a></dt>
+							
+						</dl>
+						
+					</section>
+					<section>
+						<h2>Contatos</h2>
+						<dl class="alt">
+							<dt>Morada</dt>
+							<dd>Rua de Sousa Pinto</dd>
+							<dt>Telefóne</dt>
+							<dd>(+351) 213-856-589</dd>
+							<dt>Email</dt>
+							<dd><a href="#">samuelcaroliv@gmail.com</a></dd>
+						</dl>
+					
+					</section>
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/script.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

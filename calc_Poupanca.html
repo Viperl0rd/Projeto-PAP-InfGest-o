@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>JovenFinança</title>
+		<link rel="icon" type="image/png" href="logo2.png" id="toplogo">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Calculadora de poupanças</h1>
+						<p></p>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Homepage</a></li>
+						<li><a href="index.html#intro" class="active">Projeto</a></li>
+						<li><a href="index.html#first">Finanças Fundamentais</a></li>
+						<li><a href="index.html#second">Investimentos</a></li>
+						<li><a href="index.html#cta">Criador</a></li>
+					</ul>
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								
+								<section id="calculadoras">
+
+									<h2>O que é poupança?</h2>
+									<p> Poupança é quando você guarda parte do seu dinheiro em vez de gastá-lo. É como colocar dinheiro de lado para usar no futuro, para coisas importantes ou emergências.</p>
+									<h2>Como poupar?</h2>
+									<p>1. Defina um Objetivo: Pense no que você quer comprar ou alcançar no futuro, como um videogame, uma bicicleta, ou até mesmo uma viagem.</p>
+									<p>2. Guarde Regularmente: Sempre que você ganhar dinheiro (como uma mesada ou presente), guarde uma parte dele.</p>
+									<p>3. Escolha um Lugar Seguro: Pode ser um cofrinho para pequenas quantias ou uma conta poupança em um banco para quantias maiores.</p>
+									<h2>Onde poupar?</h2>
+									<p>Cofrinho: Bom para pequenas quantias e é fácil de usar.</p>
+									<p>Conta Poupança no Banco: Ideal para guardar dinheiro de forma segura. Você pode abrir uma conta em qualquer banco em Portugal.</p>
+									<h2>Por que poupar?</h2>
+									<p>1. Segurança: Ter dinheiro guardado pode ajudar em emergências, como se o seu celular quebrar.</p>
+									<p>2. Realização de Sonhos: Você pode juntar dinheiro para comprar coisas que deseja muito.</p>
+									<p>3. Futuro: Guardar dinheiro desde cedo ajuda a ter um futuro financeiro mais estável.</p>
+									<h2>O que são juros compostos?</h2>
+									<p>Juros compostos são uma maneira de fazer o seu dinheiro guardado crescer mais rápido ao longo do tempo. Funciona assim:</p>
+									<p>1. Primeiro Passo: Você coloca dinheiro na sua poupança.</p>
+									<p>2. Ganho de Juros: O banco paga uma pequena quantia de dinheiro (juros) pelo fato de você ter deixado seu dinheiro lá.</p>
+									<p>3. Reinvestimento dos Juros: No próximo período, você ganha juros sobre o dinheiro original e sobre os juros que já ganhou.</p>
+
+
+									<div class="container">
+										<h1 id="calc_texts">Calculadora de Poupança</h1>
+
+										<form id="investment-form">
+
+												<label for="initial-amount">Valor Inicial (€):</label>
+												<input type="number" id="initial-amount" required>
+										
+												<label for="interest-rate">Taxa de Juros Anual (%):</label>
+												<input type="number" id="interest-rate" required>
+										
+												<label for="years">Anos:</label>
+												<input type="number" id="years" required>
+											
+
+
+												<button type="button" onclick="calculateSavings()">Calcular</button>
+	
+										</form>
+	
+										<label for="result">Montante Acumulado (€):</label>
+										  <input type="text" id="result" readonly>
+										
+									</div>
+									
+									<div class="container">
+										<h1 id="calc_texts">Calculadora de Crescimento de Investimento</h1>
+										<h2 id="calc_texts">Juros compostos</h2>
+										<form id="investment-form">
+
+											<div class="form-group">
+												<label for="initial-amount2">Valor Inicial:</label>
+												<input type="number" id="initial-amount2" min="0" step="0.01" required>
+											</div>
+											<div class="form-group">
+												<label for="monthly-contribution">Contribuições Mensais:</label>
+												<input type="number" id="monthly-contribution2" min="0" step="0.01" required>
+											</div>
+											<div class="form-group">
+												<label for="interest-rate">Taxa de Juros (%):</label>
+												<input type="number" id="interest-rate2" min="0" step="0.01" required>
+											</div>
+											<div class="form-group">
+												<label for="interest-frequency">Frequência da Taxa de Juros:</label>
+												<select id="interest-frequency2" class="rate-period" required>
+													<option value="annual">Anual</option>
+													<option value="monthly">Mensal</option>
+													<option value="quarterly">Trimestral</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="years">Tempo (Anos):</label>
+												<input type="number" id="years2" min="1" required>
+											</div>
+											<button type="button" onclick="calculateInvestment2()">Calcular</button>
+										</form>
+										<div id="result2"></div>
+									</div>
+
+								</section>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section >
+						<h2>Mais informações</h2>
+						<dl class="alt1">
+							<dt><a target="_blank" href="https://www.doutorfinancas.pt/creditos/quais-os-documentos-necessarios-para-o-credito-habitacao-tome-nota/?src=adw.aq-ch.search.cons.documentosch.cpa&gad_source=1&gclid=CjwKCAjwl4yyBhAgEiwADSEjeKXQSk2liPmXtLkRCD92PbtM0RTNtdU2pAE7eF7fSsUIVqiu7_I2vxoCRmEQAvD_BwE">Dr. Finanças</a></dt>
+						
+							<dt><a target="_blank" href="https://contaspoupanca.pt">Contas Poupança</a></dt>
+							
+							<dt><a target="_blank" href="https://moneylab.pt">Money Lab</a></dt>
+							
+						</dl>
+						
+					</section>
+					<section>
+						<h2>Contatos</h2>
+						<dl class="alt">
+							<dt>Morada</dt>
+							<dd>Rua de Sousa Pinto</dd>
+							<dt>Telefóne</dt>
+							<dd>(+351) 213-856-589</dd>
+							<dt>Email</dt>
+							<dd><a href="#">samuelcaroliv@gmail.com</a></dd>
+						</dl>
+					
+					</section>
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/script.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
