@@ -1,2 +1,0 @@
-peguntar a professora de como dentro de um "saiba mas" na navbar clicar no (exemplo) investimentos e 
-ir para o index e no section de investimentos
